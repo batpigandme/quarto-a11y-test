@@ -1,0 +1,4 @@
+- source: project
+  quarto-pub:
+    - id: 45f19e46-5503-47de-8315-7420782ad229
+      url: 'https://quartopub.com/sites/mara/quarto-a11y-test'

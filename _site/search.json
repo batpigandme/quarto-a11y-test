@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "quarto-a11y-test",
+    "section": "",
+    "text": "Syntax highlighting theme can be set in YAML as highlight-style with either the name of a KDE style (see KSyntaxHighlighting color themes), or as a valid JSON file with extension .theme. For details on KDE color-theme files, see “The Color Themes JSON Format” (Working with Color Themes, KDE Documentation).\nSee Quarto’s options for code chunks for HTML output for more information on styling code chunks."
+  },
+  {
+    "objectID": "index.html#r-example",
+    "href": "index.html#r-example",
+    "title": "quarto-a11y-test",
+    "section": "R example",
+    "text": "R example\n# plotting of R objects\nplot <- function (x, y, ...)\n{\n  if (is.function(x) && \n      is.null(attr(x, \"class\")))\n  {\n    if (missing(y))\n      y <- NULL\n    \n    # check for ylab argument\n    hasylab <- function(...) \n      !all(is.na(\n        pmatch(names(list(...)),\n              \"ylab\")))\n    \n    if (hasylab(...))\n      plot.function(x, y, ...)\n    \n    else \n      plot.function(\n        x, y, \n        ylab = paste(\n          deparse(substitute(x)),\n          \"(x)\"), \n        ...)\n  }\n  else \n    UseMethod(\"plot\")\n}"
+  },
+  {
+    "objectID": "index.html#python-example",
+    "href": "index.html#python-example",
+    "title": "quarto-a11y-test",
+    "section": "Python example",
+    "text": "Python example\n@requires_authorization(roles=[\"ADMIN\"])\ndef somefunc(param1='', param2=0):\n    r'''A docstring'''\n    if param1 > param2: # interesting\n        print 'Gre\\'ater'\n    return (param2 - param1 + 1 + 0b10l) or None\n\nclass SomeClass:\n    pass\n\n>>> message = '''interpreter\n... prompt'''"
+  },
+  {
+    "objectID": "index.html#javascript-example",
+    "href": "index.html#javascript-example",
+    "title": "quarto-a11y-test",
+    "section": "JavaScript example",
+    "text": "JavaScript example\nconst pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)\n\nconst compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)\n\nconst unfold = (f, seed) => {\n  const go = (f, seed, acc) => {\n    const res = f(seed)\n    return res ? go(f, res[1], acc.concat([res[0]])) : acc\n  }\n  return go(f, seed, [])\n}"
+  },
+  {
+    "objectID": "index.html#scss-example",
+    "href": "index.html#scss-example",
+    "title": "quarto-a11y-test",
+    "section": "SCSS example",
+    "text": "SCSS example\n/*-- scss:defaults --*/\n$h2-font-size:          1.6rem !default;\n$headings-font-weight:  500 !default;\n$body-color:            $gray-700 !default;\n\n/*-- scss:rules --*/\nh1, h2, h3, h4, h5, h6 {\n  text-shadow: -1px -1px 0 rgba(0, 0, 0, .3);\n}"
+  },
+  {
+    "objectID": "index.html#yaml-example",
+    "href": "index.html#yaml-example",
+    "title": "quarto-a11y-test",
+    "section": "YAML example",
+    "text": "YAML example\ntitle: \"My Document\"\nformat:\n  html: \n    theme: cosmo\n    fontsize: 1.1em\n    linestretch: 1.7"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  }
+]
