@@ -7,7 +7,7 @@
   --quarto-hl-fu-color: #06287e;
   --quarto-hl-st-color: #008000;
   --quarto-hl-cf-color: #d91e18;
-  --quarto-hl-op-color: #007faa;
+  --quarto-hl-op-color: #00769e;
   --quarto-hl-er-color: #7928a1;
   --quarto-hl-bn-color: #7928a1;
   --quarto-hl-al-color: #7928a1;
@@ -26,7 +26,7 @@
   --quarto-hl-co-color: #696969;
   --quarto-hl-cv-color: #696969;
   --quarto-hl-cn-color: #d91e18;
-  --quarto-hl-sc-color: #007faa;
+  --quarto-hl-sc-color: #00769e;
   --quarto-hl-dv-color: #7928a1;
   --quarto-hl-kw-color: #d91e18;
 }
@@ -82,7 +82,7 @@ code span.cf {
 }
 
 code span.op {
-  color: #007faa;
+  color: #00769e;
 }
 
 code span.er {
@@ -149,7 +149,7 @@ code span.cn {
 }
 
 code span.sc {
-  color: #007faa;
+  color: #00769e;
 }
 
 code span.dv {
